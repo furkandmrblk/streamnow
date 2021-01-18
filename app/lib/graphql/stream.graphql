@@ -1,0 +1,12 @@
+query Stream($streamId: ObjectId!) {
+  stream(streamId: $streamId) {
+    _id
+    title
+    description
+    url
+    author {
+      _id
+      email
+    }
+  }
+}
